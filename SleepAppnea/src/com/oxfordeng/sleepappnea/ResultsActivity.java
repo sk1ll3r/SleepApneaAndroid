@@ -3,13 +3,17 @@ package com.oxfordeng.sleepappnea;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.widget.TextView;
 
 public class ResultsActivity extends Activity {
-
+	private TextView textViewResults;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
+        
+        textViewResults = (TextView) findViewById(R.id.textViewResults);
     }
 
 

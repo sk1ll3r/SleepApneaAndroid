@@ -1,0 +1,5 @@
+package com.oxfordeng.sleepappnea;
+
+public class QuestionnaireData {
+	String spinner, editText1, editText2, date;
+}

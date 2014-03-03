@@ -22,6 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.oxfordeng.sleepappnea.QuestionnaireActivity" >
+        </activity>
+        <activity android:name="com.oxfordeng.sleepappnea.ResultsActivity" >
+        </activity>
+        <activity android:name="com.oxfordeng.sleepappnea.SoundAnalysisActivity" >
+        </activity>
     </application>
 
 </manifest>

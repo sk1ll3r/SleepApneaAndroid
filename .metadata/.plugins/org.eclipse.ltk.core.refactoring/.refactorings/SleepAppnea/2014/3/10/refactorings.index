@@ -4,3 +4,8 @@
 1393880511726	Copy file
 1393880529748	Copy compilation unit
 1393880543855	Copy file
+1393887112493	Rename field 'spinner2'
+1393887220493	Encapsulate field 'spinner'
+1393887227003	Encapsulate field 'editText1'
+1393887234645	Encapsulate field 'editText2'
+1393887240942	Encapsulate field 'date'

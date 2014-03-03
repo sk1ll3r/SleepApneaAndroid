@@ -8,22 +8,80 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/spinner_entries1"
-        android:prompt="@string/spinner_prompt1" />
- 
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
- 
-    <Button
-        android:id="@+id/btnSubmit"
+    <RadioGroup
+        android:id="@+id/radioSnore"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Submit" />
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioY1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/radioN1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioTired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioY2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/radioN2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioObserved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioY3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/radioN3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioY4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/radioN4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
 
 </RelativeLayout>

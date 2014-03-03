@@ -1,0 +1,37 @@
+package com.oxfordeng.sleepappnea;
+
+public class QuestionnaireData {
+	private String spinner, editText1, editText2, date;
+
+	public String getSpinner() {
+		return spinner;
+	}
+
+	public void setSpinner(String spinner) {
+		this.spinner = spinner;
+	}
+
+	public String getEditText1() {
+		return editText1;
+	}
+
+	public void setEditText1(String editText1) {
+		this.editText1 = editText1;
+	}
+
+	public String getEditText2() {
+		return editText2;
+	}
+
+	public void setEditText2(String editText2) {
+		this.editText2 = editText2;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+}
