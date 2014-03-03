@@ -10,8 +10,6 @@ A
 
 Sachin.
 
-<<<<<<< HEAD
 GEORGE!
-=======
+
 Bla.
->>>>>>> FETCH_HEAD
