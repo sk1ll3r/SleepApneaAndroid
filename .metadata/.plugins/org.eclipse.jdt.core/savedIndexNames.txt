@@ -1,3 +1,4 @@
-INDEX VERSION 1.126+E:\Dropbox\Programming\SleepApneaAndroid\.metadata\.plugins\org.eclipse.jdt.core
-2467119648.index
-3586414106.index
+INDEX VERSION 1.126+/Users/georgecochrane/Documents/SleepApneaAndroid/.metadata/.plugins/org.eclipse.jdt.core
+1996619105.index
+513003893.index
+1879037630.index

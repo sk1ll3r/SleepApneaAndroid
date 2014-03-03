@@ -1,0 +1,20 @@
+#Thu Oct 24 20:23:19 UTC 2013
+repositories/http\:__download.eclipse.org_releases_juno/isSystem=false
+repositories/https\:__dl-ssl.google.com_android_eclipse/isSystem=false
+repositories/http\:__dl-ssl.google.com_android_eclipse/uri=http\://dl-ssl.google.com/android/eclipse/
+eclipse.preferences.version=1
+repositories/https\:__dl-ssl.google.com_android_eclipse/uri=https\://dl-ssl.google.com/android/eclipse/
+repositories/http\:__download.eclipse.org_eclipse_updates_4.2/count=5
+repositories/https\:__dl-ssl.google.com_android_eclipse/enabled=false
+repositories/http\:__dl-ssl.google.com_android_eclipse/nickname=Android Developer Tools Update Site
+repositories/http\:__download.eclipse.org_releases_juno/count=5
+repositories/http\:__dl-ssl.google.com_android_eclipse/enabled=true
+repositories/http\:__download.eclipse.org_releases_juno/enabled=true
+repositories/http\:__download.eclipse.org_eclipse_updates_4.2/uri=http\://download.eclipse.org/eclipse/updates/4.2
+repositories/http\:__download.eclipse.org_eclipse_updates_4.2/isSystem=false
+repositories/http\:__dl-ssl.google.com_android_eclipse/count=5
+repositories/http\:__dl-ssl.google.com_android_eclipse/isSystem=false
+repositories/http\:__download.eclipse.org_eclipse_updates_4.2/nickname=The Eclipse Project Updates
+repositories/http\:__download.eclipse.org_eclipse_updates_4.2/enabled=true
+repositories/http\:__download.eclipse.org_releases_juno/nickname=Juno
+repositories/http\:__download.eclipse.org_releases_juno/uri=http\://download.eclipse.org/releases/juno
