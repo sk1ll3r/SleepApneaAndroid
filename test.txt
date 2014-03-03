@@ -1,3 +1,8 @@
 Tuan Anh.
+<<<<<<< HEAD
 Sachin.
 George.
+=======
+George.
+Sophie.
+>>>>>>> ce41c9c4c6d5504fe571f4556b704eb18aa96505
