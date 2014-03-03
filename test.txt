@@ -17,10 +17,16 @@ Bla.
 Bla.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 Sachin's got his own code lalala
 
 Some code.
+=======
+Some code.
+
+LOADS OF CODE FROM GEORGE
+>>>>>>> FETCH_HEAD
 =======
 Some code.
 
