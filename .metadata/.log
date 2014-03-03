@@ -95,7 +95,9 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.android.
 !ENTRY org.eclipse.core.net 1 0 2014-03-03 19:23:34.256
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
 
-!ENTRY org.eclipse.core.resources 4 1 2014-03-03 19:28:48.389
+
+!ENTRY org.eclipse.core.resources 4 1 2014-03-03 19:28:05.655
+
 !MESSAGE Core exception while retrieving the content description
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/SleepAppnea/res/layout/activity_main.xml'.
@@ -121,10 +123,12 @@ org.eclipse.core.internal.resources.ResourceException: Resource is out of sync w
 	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:236)
 	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$2.run(LaunchingResourceManager.java:138)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
-!SUBENTRY 1 org.eclipse.core.resources 4 274 2014-03-03 19:28:48.390
+
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2014-03-03 19:28:05.656
 !MESSAGE Resource is out of sync with the file system: '/SleepAppnea/res/layout/activity_main.xml'.
 
-!ENTRY org.eclipse.core.resources 4 1 2014-03-03 19:28:48.395
+!ENTRY org.eclipse.core.resources 4 1 2014-03-03 19:28:05.662
+
 !MESSAGE Core exception while retrieving the content description
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/SleepAppnea/res/layout/activity_main.xml'.
@@ -152,10 +156,12 @@ org.eclipse.core.internal.resources.ResourceException: Resource is out of sync w
 	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:240)
 	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$2.run(LaunchingResourceManager.java:138)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
-!SUBENTRY 1 org.eclipse.core.resources 4 274 2014-03-03 19:28:48.395
+
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2014-03-03 19:28:05.662
 !MESSAGE Resource is out of sync with the file system: '/SleepAppnea/res/layout/activity_main.xml'.
 
-!ENTRY org.eclipse.core.resources 4 1 2014-03-03 19:28:48.396
+!ENTRY org.eclipse.core.resources 4 1 2014-03-03 19:28:05.667
+
 !MESSAGE Core exception while retrieving the content description
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/SleepAppnea/res/layout/activity_main.xml'.
@@ -184,10 +190,12 @@ org.eclipse.core.internal.resources.ResourceException: Resource is out of sync w
 	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:240)
 	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$2.run(LaunchingResourceManager.java:138)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
-!SUBENTRY 1 org.eclipse.core.resources 4 274 2014-03-03 19:28:48.397
+
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2014-03-03 19:28:05.668
 !MESSAGE Resource is out of sync with the file system: '/SleepAppnea/res/layout/activity_main.xml'.
 
-!ENTRY org.eclipse.core.resources 4 1 2014-03-03 19:28:48.588
+!ENTRY org.eclipse.core.resources 4 1 2014-03-03 19:28:06.181
+
 !MESSAGE Core exception while retrieving the content description
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/SleepAppnea/res/layout/activity_main.xml'.
@@ -213,10 +221,12 @@ org.eclipse.core.internal.resources.ResourceException: Resource is out of sync w
 	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:236)
 	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$2.run(LaunchingResourceManager.java:138)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
-!SUBENTRY 1 org.eclipse.core.resources 4 274 2014-03-03 19:28:48.588
+
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2014-03-03 19:28:06.181
 !MESSAGE Resource is out of sync with the file system: '/SleepAppnea/res/layout/activity_main.xml'.
 
-!ENTRY org.eclipse.core.resources 4 1 2014-03-03 19:28:48.591
+!ENTRY org.eclipse.core.resources 4 1 2014-03-03 19:28:06.186
+
 !MESSAGE Core exception while retrieving the content description
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/SleepAppnea/res/layout/activity_main.xml'.
@@ -244,10 +254,12 @@ org.eclipse.core.internal.resources.ResourceException: Resource is out of sync w
 	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:240)
 	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$2.run(LaunchingResourceManager.java:138)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
-!SUBENTRY 1 org.eclipse.core.resources 4 274 2014-03-03 19:28:48.592
+
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2014-03-03 19:28:06.187
 !MESSAGE Resource is out of sync with the file system: '/SleepAppnea/res/layout/activity_main.xml'.
 
-!ENTRY org.eclipse.core.resources 4 1 2014-03-03 19:28:48.593
+!ENTRY org.eclipse.core.resources 4 1 2014-03-03 19:28:06.192
+
 !MESSAGE Core exception while retrieving the content description
 !STACK 1
 org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/SleepAppnea/res/layout/activity_main.xml'.
@@ -276,5 +288,7 @@ org.eclipse.core.internal.resources.ResourceException: Resource is out of sync w
 	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:240)
 	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$2.run(LaunchingResourceManager.java:138)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
-!SUBENTRY 1 org.eclipse.core.resources 4 274 2014-03-03 19:28:48.593
+
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2014-03-03 19:28:06.192
+
 !MESSAGE Resource is out of sync with the file system: '/SleepAppnea/res/layout/activity_main.xml'.
