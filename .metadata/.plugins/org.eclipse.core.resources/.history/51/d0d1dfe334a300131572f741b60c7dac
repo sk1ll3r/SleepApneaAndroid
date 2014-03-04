@@ -1,0 +1,47 @@
+package com.oxfordeng.sleepappnea;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Context;
+import android.view.Menu;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+import java.util.List;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.RadioGroup;
+import android.widget.Spinner;
+import android.widget.Toast;
+
+public class QuestionnaireActivity extends Activity {
+	RadioGroup radioOne, radioTwo, radioThree, radioFour, radioFive, radioSix,
+			radioSeven, radioEight;
+
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_questionnaire);
+
+		radioOne = (RadioGroup) findViewById(R.id.radioSnore);
+		radioTwo = (RadioGroup) findViewById(R.id.radioTired);
+		radioThree = (RadioGroup) findViewById(R.id.radioObserved);
+		radioFour = (RadioGroup) findViewById(R.id.radioPressure);
+		radioFive = (RadioGroup) findViewById(R.id.radioBMI);
+		radioSix = (RadioGroup) findViewById(R.id.radioAge);
+		radioSeven = (RadioGroup) findViewById(R.id.radioNeck);
+		radioEight = (RadioGroup) findViewById(R.id.radioGender);
+
+	}
+	
+	private int count() {
+		int result = 0;
+		if (radioOne.getCheckedRadioButtonId() == R.id.radioY1) result++;
+	}
+}

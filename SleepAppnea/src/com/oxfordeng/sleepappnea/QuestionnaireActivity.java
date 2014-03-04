@@ -3,6 +3,7 @@ package com.oxfordeng.sleepappnea;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.view.Menu;
 
 import java.io.FileNotFoundException;
@@ -17,82 +18,64 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 public class QuestionnaireActivity extends Activity {
-	private Spinner spinner;
-	private Button btnSubmit;
-	private DatePicker datePicker;
-	private EditText textNumber, textText;
-	String FILENAME = "QuestionnaireFile";
+	public static final String PREFS_NAME = "QuestionnaireResults";
+	RadioGroup radioOne, radioTwo, radioThree, radioFour, radioFive, radioSix,
+			radioSeven, radioEight;
+	Button btnSubmit;
 
-
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
+	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_questionnaire);
 
-		spinner = (Spinner) findViewById(R.id.spinner2);
+		radioOne = (RadioGroup) findViewById(R.id.radioSnore);
+		radioTwo = (RadioGroup) findViewById(R.id.radioTired);
+		radioThree = (RadioGroup) findViewById(R.id.radioObserved);
+		radioFour = (RadioGroup) findViewById(R.id.radioPressure);
+		radioFive = (RadioGroup) findViewById(R.id.radioBMI);
+		radioSix = (RadioGroup) findViewById(R.id.radioAge);
+		radioSeven = (RadioGroup) findViewById(R.id.radioNeck);
+		radioEight = (RadioGroup) findViewById(R.id.radioGender);
+
 		btnSubmit = (Button) findViewById(R.id.btnSubmit);
-		datePicker = (DatePicker) findViewById(R.id.datePicker1);
-		textNumber = (EditText) findViewById(R.id.editText1);
-		textText = (EditText) findViewById(R.id.editText2);
-		
-		
-		addItemsOnSpinner2();
 		btnSubmit.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-				try {
-					submit();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+				submit();
 			}
 		});
 	}
 
-	protected void submit() throws IOException {
-		saveData();
-		startMainActivity();
+	protected void submit() {
+		SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+		SharedPreferences.Editor editor = settings.edit();
+		editor.putInt("stopbang", count());
+		editor.commit();
+		finish();
 	}
 
-	private void startMainActivity() {
-		this.finish();
+	private int count() {
+		int result = 0;
+		if (radioOne.getCheckedRadioButtonId() == R.id.radioY1)
+			result++;
+		if (radioTwo.getCheckedRadioButtonId() == R.id.radioY2)
+			result++;
+		if (radioThree.getCheckedRadioButtonId() == R.id.radioY3)
+			result++;
+		if (radioFour.getCheckedRadioButtonId() == R.id.radioY4)
+			result++;
+		if (radioFive.getCheckedRadioButtonId() == R.id.radioY5)
+			result++;
+		if (radioSix.getCheckedRadioButtonId() == R.id.radioY6)
+			result++;
+		if (radioSeven.getCheckedRadioButtonId() == R.id.radioY7)
+			result++;
+		if (radioEight.getCheckedRadioButtonId() == R.id.radioY8)
+			result++;
+
+		return result;
 	}
-
-	private void saveData() throws IOException {
-		QuestionnaireData data = new QuestionnaireData();
-		data.setDate(datePicker.toString());
-		data.setEditText1(textNumber.toString());
-		data.setEditText2(textText.toString());
-		data.setSpinner(spinner.toString());
-		
-		FileOutputStream fos = openFileOutput(FILENAME, Context.MODE_PRIVATE);
-		ObjectOutputStream os = new ObjectOutputStream(fos);
-		os.writeObject(data);
-		os.close();
-	}
-
-	public void addItemsOnSpinner2() {
-
-		spinner = (Spinner) findViewById(R.id.spinner2);
-		List<String> list = new ArrayList<String>();
-		list.add("Male");
-		list.add("Female");
-		ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_spinner_item, list);
-		dataAdapter
-				.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		spinner.setAdapter(dataAdapter);
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
-
 }

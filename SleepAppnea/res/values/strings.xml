@@ -5,7 +5,17 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="spinner_prompt1">Question 1</string>
- 
+    <string name="Y">Yes</string>
+ 	<string name="N">No</string>
+ 	<string name="Q1">Do you snore loudly (enough to be heard through closed doors)?</string>
+ 	<string name="Q2">Do you often feel tired, sleepy or fatigued during daytime?</string>
+ 	<string name="Q3">Has anyone observed you stop breathing during your sleep?</string>
+ 	<string name="Q4">Do you have or are you being treated for high blood pressure?</string>
+ 	<string name="Q5">Do you have a BMI greater than 35kg/m^2?</string>
+ 	<string name="Q6">Are you over 50 years old?</string>
+ 	<string name="Q7">Do you have a neck circumference greater than 40cm?</string>
+ 	<string name="Q8">Are you male?</string>
+ 	
     <string-array name="spinner_entries1">
         <item>Malaysia</item>
         <item>United States</item>

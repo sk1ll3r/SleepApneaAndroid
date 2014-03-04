@@ -1,0 +1,217 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Q1" />
+        
+    <RadioGroup
+        android:id="@+id/radioSnore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioY1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Y" />
+
+        <RadioButton
+            android:id="@+id/radioN1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/N" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Q2" />
+
+    <RadioGroup
+        android:id="@+id/radioTired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioY2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Y" />
+
+        <RadioButton
+            android:id="@+id/radioN2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/N" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Q3" />
+
+    <RadioGroup
+        android:id="@+id/radioObserved"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" android:layout_weight="1">
+
+        <RadioButton
+            android:id="@+id/radioY3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Y" />
+
+        <RadioButton
+            android:id="@+id/radioN3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/N" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Q4" />
+
+    <RadioGroup
+        android:id="@+id/radioPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioY4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Y" />
+
+        <RadioButton
+            android:id="@+id/radioN4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/N" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Q5" />
+    
+    <RadioGroup
+        android:id="@+id/radioBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioY5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Y" />
+
+        <RadioButton
+            android:id="@+id/radioN5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/N" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Q6" />
+
+    <RadioGroup
+        android:id="@+id/radioAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioY6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Y" />
+
+        <RadioButton
+            android:id="@+id/radioN6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/N" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Q7" />
+
+    <RadioGroup
+        android:id="@+id/radioNeck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioY7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Y" />
+
+        <RadioButton
+            android:id="@+id/radioN7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/N" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Q8" />
+
+    <RadioGroup
+        android:id="@+id/radioGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioY8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Y" />
+
+        <RadioButton
+            android:id="@+id/radioN8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/N" />
+    </RadioGroup>
+
+</LinearLayout>
+</ScrollView>

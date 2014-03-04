@@ -1,0 +1,72 @@
+package com.oxfordeng.sleepappnea;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Context;
+import android.view.Menu;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+import java.util.List;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.Toast;
+
+public class QuestionnaireActivity extends Activity {
+	private Spinner spinner;
+	private Button btnSubmit;
+	private DatePicker datePicker;
+	private EditText textNumber, textText;
+	String FILENAME = "QuestionnaireFile";
+
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_questionnaire);
+
+		
+		btnSubmit.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				try {
+					submit();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	protected void submit() throws IOException {
+		saveData();
+		startMainActivity();
+	}
+
+	private void startMainActivity() {
+		this.finish();
+	}
+
+	private void saveData() throws IOException {
+		QuestionnaireData data = new QuestionnaireData();
+		data.setDate(datePicker.toString());
+		data.setEditText1(textNumber.toString());
+		data.setEditText2(textText.toString());
+		data.setSpinner(spinner.toString());
+		
+		FileOutputStream fos = openFileOutput(FILENAME, Context.MODE_PRIVATE);
+		ObjectOutputStream os = new ObjectOutputStream(fos);
+		os.writeObject(data);
+		os.close();
+	}
+
+
+}

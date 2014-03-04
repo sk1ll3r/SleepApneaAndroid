@@ -58,11 +58,11 @@ public class QuestionnaireData implements Serializable {
 		os.close();
 	}
 
-	public void loadFromFile(String FILENAME, Context context) {
+	/*public void loadFromFile(String FILENAME, Context context) {
 		FileInputStream fis = context.openFileInput(FILENAME);
 		ObjectInputStream is = new ObjectInputStream(fis);
 		QuestionnaireData q = (QuestionnaireData) is.readObject();
 		is.close();
-		return simpleClass;
-	}
+		return q;
+	} */
 }

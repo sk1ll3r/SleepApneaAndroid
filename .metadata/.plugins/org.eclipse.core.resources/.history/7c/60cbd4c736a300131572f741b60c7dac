@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_questionnaire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Questionnaire" />
+
+    <Button
+        android:id="@+id/btn_analyse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Analyse Sound" />
+
+    <Button
+        android:id="@+id/btn_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Results" />
+
+</LinearLayout>

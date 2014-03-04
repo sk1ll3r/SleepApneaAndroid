@@ -38,8 +38,8 @@ public class MainActivity extends Activity {
 	}
 
 	protected void startResultsActivity() {
-		// TODO Auto-generated method stub
-		
+		Intent intent = new Intent(this, ResultsActivity.class);
+		startActivity(intent);
 	}
 
 	protected void startAnalyseActivity() {
@@ -51,12 +51,4 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent(this, QuestionnaireActivity.class);
 		startActivity(intent);
 	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
-
 }
